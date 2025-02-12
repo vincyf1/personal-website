@@ -56,10 +56,6 @@ const SectionTitle = styled.h2`
   }
 `;
 
-interface ContentProps {
-  isOpen: boolean;
-}
-
 const Timeline = styled.div`
   position: relative;
   width: 100vw;
@@ -158,37 +154,9 @@ const Description = styled.div`
   margin: 0;
 `;
 
-const DescriptionItem = styled.li`
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-  padding-left: 1.2rem;
-  position: relative;
-  
-  &:before {
-    content: "▹";
-    position: absolute;
-    left: 0;
-    color: var(--secondary-color);
-  }
-`;
 
-const ToggleIcon = styled.span<ContentProps>`
-  color: var(--secondary-color);
-  transition: transform 0.3s ease;
-  transform: rotate(${props => props.isOpen ? '180deg' : '0'});
-  font-size: 1.2rem;
-  margin-left: 1rem;
-`;
 
 const Experience: React.FC = () => {
-  const [openItems, setOpenItems] = React.useState<{ [key: string]: boolean }>({});
-
-  const toggleItem = (company: string) => {
-    setOpenItems(prev => ({
-      ...prev,
-      [company]: !prev[company]
-    }));
-  };
 
   const experiences = [
     {
@@ -246,10 +214,7 @@ const Experience: React.FC = () => {
                       padding: '0.5rem 0',
                       margin: 0,
                       color: 'var(--text-secondary)',
-                      transition: 'all 0.3s ease',
-                      '&:hover': {
-                        color: 'var(--text-primary)'
-                      }
+                      transition: 'all 0.3s ease'
                     }}>{item}</p>
                   ))}
                 </Description>
