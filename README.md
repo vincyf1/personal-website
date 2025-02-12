@@ -1,50 +1,99 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal website built with React, TypeScript, and Vite. View it live at [vincyf1.github.io/personal-website](https://vincyf1.github.io/personal-website)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Modern and clean design
+- 📱 Fully responsive layout
+- 🚀 Fast loading with Vite
+- 🔍 SEO optimized
+- 💅 Styled with styled-components
+- 🌙 Smooth animations
+- 📊 Professional experience timeline
+- 🔗 Social media integration
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React 19
+- TypeScript
+- Vite 6
+- Styled Components
+- Font Awesome Icons
+- GitHub Pages
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v9 or higher)
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/vincyf1/personal-website.git
+cd personal-website
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies
+```bash
+npm install
 ```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) to view it in your browser
+
+## Project Structure
+
+```
+├── public/              # Static files
+│   └── images/          # Image assets
+├── src/
+│   ├── components/      # React components
+│   │   ├── Experience/  # Experience section
+│   │   ├── Footer/      # Footer component
+│   │   ├── Header/      # Navigation header
+│   │   ├── Hero/        # Hero section
+│   │   └── Skills/      # Skills section
+│   ├── styles/          # Global styles
+│   ├── App.tsx          # Main App component
+│   └── main.tsx         # Entry point
+└── package.json         # Dependencies and scripts
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run deploy` - Deploy to GitHub Pages
+
+## Deployment
+
+The website is automatically deployed to GitHub Pages when changes are pushed to the main branch. The deployment process:
+
+1. Builds the project using Vite
+2. Pushes the built files to the gh-pages branch
+3. GitHub Pages serves the content from the gh-pages branch
+
+## Customization
+
+1. Update content in respective components under `src/components/`
+2. Modify styles in `src/styles/global.css`
+3. Replace images in `public/images/`
+4. Update metadata in `index.html`
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
