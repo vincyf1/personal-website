@@ -46,6 +46,15 @@ const NavLinks = styled.div`
   }
 `;
 
+const Logo = styled.h1`
+  font-size: 1.4rem;
+  margin: 0;
+  background: linear-gradient(120deg, var(--gradient-end), var(--gradient-start));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+`;
+
 const NavLink = styled(Link)`
   color: var(--text-secondary);
   text-decoration: none;
@@ -93,7 +102,7 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <NavContent>
-        <h1>Vinay Kulkarni</h1>
+        <Logo>Vinay Kulkarni</Logo>
         <NavLinks>
           <NavLink
             to="about"

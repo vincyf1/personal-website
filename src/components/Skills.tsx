@@ -37,7 +37,7 @@ const SectionTitle = styled.h2`
   text-align: center;
   margin-bottom: calc(var(--spacing) * 3);
   font-size: 2.5rem;
-  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--gradient-start));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -114,7 +114,7 @@ const CategoryHeader = styled.div`
 
 const CategoryTitle = styled.h3`
   font-size: 1.5rem;
-  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--gradient-start));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;

@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #1a1a1a;
-  --primary-color-rgb: 26, 26, 26;
+  --primary-color: #0e0e10;
+  --primary-color-rgb: 14, 14, 16;
   --secondary-color: #64ffda;
   --text-primary: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.85);
-  --background: #0f172a;
-  --background-light: #1e293b;
-  --gradient-start: #4316db;
-  --gradient-end: #9076fc;
-  --glass-background: rgba(255, 255, 255, 0.2);
-  --glass-border: rgba(255, 255, 255, 0.35);
-  --glass-hover: rgba(255, 255, 255, 0.25);
-  --glass-blur: 20px;
+  --background: #0e0e10;
+  --background-light: #17171d;
+  --gradient-start: #8e2de2;
+  --gradient-end: #4a00e0;
+  --glass-background: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --glass-hover: rgba(255, 255, 255, 0.2);
+  --glass-blur: 16px;
 }
 
 body {
@@ -22,7 +22,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background:
-    radial-gradient(circle at 20% 20%, var(--gradient-end), transparent 70%),
+    radial-gradient(circle at 20% 20%, var(--gradient-end), transparent 60%),
+    radial-gradient(circle at 80% 120%, var(--gradient-start), transparent 70%),
     linear-gradient(135deg, var(--background) 0%, var(--background-light) 100%);
   color: var(--text-primary);
 }
@@ -44,14 +45,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: var(--background-light);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--background-light);
+  background: var(--gradient-end);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color);
+  background: var(--gradient-start);
 }

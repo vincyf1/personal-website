@@ -25,12 +25,26 @@ const HeroSection = styled.section`
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
   }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, var(--gradient-start), transparent 70%);
+    filter: blur(80px);
+    z-index: 0;
+  }
 `;
 
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing);
+  position: relative;
+  z-index: 1;
 `;
 
 const ProfileContainer = styled.div`
@@ -65,6 +79,8 @@ const ProfileImage = styled.img`
     width: 200px;
     height: 200px;
   }
+  position: relative;
+  z-index: 1;
 `;
 
 const ProfileContent = styled.div`
@@ -78,6 +94,8 @@ const ProfileContent = styled.div`
   border: 1px solid var(--glass-border);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 
   &:hover {
     transform: translateY(-5px);
@@ -95,7 +113,7 @@ const ProfileContent = styled.div`
 const Title = styled.h2`
   font-size: 2.8rem;
   margin-bottom: 1rem;
-  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--gradient-start));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;

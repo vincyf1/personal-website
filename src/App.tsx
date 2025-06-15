@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary-color: #1a1a1a;
+    --primary-color: #0e0e10;
     --secondary-color: #64ffda;
     --spacing: 1rem;
   }
