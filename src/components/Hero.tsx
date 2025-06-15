@@ -6,7 +6,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const HeroSection = styled.section`
   background: radial-gradient(circle at top right, rgba(100, 255, 218, 0.1), transparent),
               linear-gradient(45deg, var(--background) 0%, var(--background-light) 100%);
-  color: white;
+  color: var(--text-primary);
   padding: calc(var(--spacing) * 6) 0;
   margin-top: 70px;
   min-height: calc(100vh - 70px);
@@ -71,10 +71,10 @@ const ProfileContent = styled.div`
   flex: 1;
   min-width: 300px;
   padding: calc(var(--spacing) * 3);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 
@@ -152,12 +152,12 @@ const SocialLink = styled.a`
   gap: 0.8rem;
   color: var(--text-secondary);
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.3);
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   transition: all 0.3s ease;
   font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
 
   svg {
@@ -167,7 +167,7 @@ const SocialLink = styled.a`
 
   &:hover {
     transform: translateY(-3px);
-    color: white;
+    color: var(--text-primary);
     border-color: rgba(100, 255, 218, 0.3);
 
     svg {

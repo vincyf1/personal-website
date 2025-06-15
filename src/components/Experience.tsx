@@ -87,10 +87,10 @@ const TimelineItem = styled.div`
 `;
 
 const TimelineContent = styled.div`
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 16px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 100%;
@@ -110,7 +110,7 @@ const TimelineContent = styled.div`
 const TimelineHeader = styled.div`
   padding: calc(var(--spacing) * 2);
   text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 `;
 
 const CompanyName = styled.h3`

@@ -7,8 +7,8 @@ import Footer from './components/Footer';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --primary-color: #ffffff;
+    --secondary-color: #4dabf7;
     --spacing: 1rem;
   }
 
@@ -25,10 +25,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
-    color: #333;
+    color: var(--text-primary);
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: transparent;
   }
 
   h1, h2, h3, h4, h5, h6 {
