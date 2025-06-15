@@ -10,7 +10,7 @@ const HeroSection = styled.section`
   color: var(--text-primary);
   padding: calc(var(--spacing) * 6) 0;
   margin-top: 70px;
-  min-height: calc(100vh - 70px);
+  min-height: calc(80vh - 70px);
   display: flex;
   align-items: center;
   position: relative;
@@ -119,21 +119,31 @@ const Title = styled.h2`
   }
 `;
 
-const Tagline = styled.div`
+const TaglineList = styled.ul`
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: calc(var(--spacing) * 2) 0;
   color: var(--text-secondary);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  
-  p {
-    margin: calc(var(--spacing) * 1.5) 0;
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: calc(var(--spacing) * 1) 0;
+    display: flex;
+    align-items: flex-start;
   }
-  
+
+  li::before {
+    content: '•';
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-right: 0.6rem;
+  }
+
   strong {
     color: var(--secondary-color);
     font-weight: 500;
-    margin: 0 0.2rem;
   }
 `;
 
@@ -197,34 +207,28 @@ const Hero: React.FC = () => {
           </ProfileImageContainer>
           <ProfileContent>
             <Title>Data & Technology Leader</Title>
-            <Tagline>
-              <p>
-                As a visionary Data Leader with over 15 years of experience, I’ve driven enterprise-scale
-                data transformations across fintech, ecommerce, and technology sectors. Currently heading
-                Data capability at <strong>Wisr</strong>, I lead the development of modern data platforms and
-                the execution of AI-driven strategies that align closely with business objectives.
-              </p>
-              <p>
-                I combine deep technical expertise—spanning the design of scalable data architectures,
-                development of cloud-native platforms, and implementation of enterprise-grade data
-                warehouses—with strategic leadership in building high-performing teams, managing vendor
-                relationships, and ensuring data governance and compliance. My approach bridges the gap
-                between engineering and executive vision, enabling organizations to transform data into a
-                true strategic asset that drives innovation and competitive advantage.
-              </p>
-              <p>
-                I’m passionate about accelerating AI adoption through modern data stack enablement and
-                intelligent automation. My recent initiatives include leading the design of
-                <strong>Multi-Agentic</strong> workflows and introducing next-generation data product
-                architectures that enhance decision-making and operational efficiency.
-              </p>
-              <p>
-                Previously, I’ve delivered impactful data solutions at <strong>REA Group</strong>,
-                <strong>THE ICONIC</strong>, and <strong>DXC Technology</strong>, and contributed to the data
-                community through conference speaking and technical writing. I thrive on creating lasting
-                data capabilities that empower organizations to move faster, smarter, and more securely.
-              </p>
-            </Tagline>
+            <TaglineList>
+              <li>
+                <strong>15+ years</strong> delivering enterprise-scale data transformations across fintech,
+                ecommerce and technology sectors.
+              </li>
+              <li>
+                Currently head of Data capability at <strong>Wisr</strong>, building modern platforms and
+                AI-driven strategies.
+              </li>
+              <li>
+                Bridges <strong>engineering</strong> and <strong>executive vision</strong> to turn data into a
+                strategic asset.
+              </li>
+              <li>
+                Leads <strong>Multi-Agentic</strong> workflow design and next-gen data products to accelerate AI
+                adoption.
+              </li>
+              <li>
+                Previous successes at <strong>REA Group</strong>, <strong>THE ICONIC</strong> and
+                <strong>DXC Technology</strong>.
+              </li>
+            </TaglineList>
             <SocialLinks>
               <SocialLink
                 href="https://github.com/vincyf1"
