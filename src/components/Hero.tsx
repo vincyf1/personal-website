@@ -121,17 +121,19 @@ const Title = styled.h2`
 
 const TaglineList = styled.ul`
   font-size: 1.1rem;
-  line-height: 1.7;
+  line-height: 1.8;
   margin: calc(var(--spacing) * 2) 0;
   color: var(--text-secondary);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   list-style: none;
   padding: 0;
+  max-width: 600px;
 
   li {
-    margin-bottom: calc(var(--spacing) * 1.25);
+    margin-bottom: calc(var(--spacing) * 1.5);
     display: flex;
     align-items: flex-start;
+    gap: 0.4rem;
   }
 
   li:last-child {
