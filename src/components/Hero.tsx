@@ -198,19 +198,30 @@ const Hero: React.FC = () => {
             <Title>Data & Technology Leader</Title>
             <Tagline>
               <p>
-                Seasoned data and technology leader with over 15 years building high-performing teams and
-                delivering modern <strong>data platforms</strong> and <strong>analytics solutions</strong>.
-                Proven track record of driving innovation at <strong>WISR</strong>, <strong>REA Group</strong>,
-                and <strong>The Iconic</strong>.
+                As a visionary Data Leader with over 15 years of experience, I’ve driven enterprise-scale
+                data transformations across fintech, ecommerce, and technology sectors. Currently heading
+                Data capability at <strong>Wisr</strong>, I lead the development of modern data platforms and
+                the execution of AI-driven strategies that align closely with business objectives.
               </p>
               <p>
-                Expertise across <strong>data architecture</strong>, <strong>cloud strategy</strong>, and
-                <strong>machine learning operations</strong> with a strong commitment to
-                <strong>data quality</strong> and engineering excellence.
+                I combine deep technical expertise—spanning the design of scalable data architectures,
+                development of cloud-native platforms, and implementation of enterprise-grade data
+                warehouses—with strategic leadership in building high-performing teams, managing vendor
+                relationships, and ensuring data governance and compliance. My approach bridges the gap
+                between engineering and executive vision, enabling organizations to transform data into a
+                true strategic asset that drives innovation and competitive advantage.
               </p>
               <p>
-                Focused on <strong>platform modernization</strong>, <strong>team mentorship</strong>, and
-                enabling organizations to become truly <strong>data‑driven</strong>.
+                I’m passionate about accelerating AI adoption through modern data stack enablement and
+                intelligent automation. My recent initiatives include leading the design of
+                <strong>Multi-Agentic</strong> workflows and introducing next-generation data product
+                architectures that enhance decision-making and operational efficiency.
+              </p>
+              <p>
+                Previously, I’ve delivered impactful data solutions at <strong>REA Group</strong>,
+                <strong>THE ICONIC</strong>, and <strong>DXC Technology</strong>, and contributed to the data
+                community through conference speaking and technical writing. I thrive on creating lasting
+                data capabilities that empower organizations to move faster, smarter, and more securely.
               </p>
             </Tagline>
             <SocialLinks>
