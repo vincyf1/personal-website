@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const ExperienceSection = styled.section`
   padding: calc(var(--spacing) * 6) 0;
-  background: linear-gradient(135deg, var(--background) 0%, var(--background-light) 100%);
+  background:
+    radial-gradient(circle at top left, var(--gradient-start), transparent 70%),
+    linear-gradient(135deg, var(--background) 0%, var(--background-light) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,7 +36,7 @@ const SectionTitle = styled.h2`
   text-align: center;
   margin-bottom: calc(var(--spacing) * 3);
   font-size: 2.5rem;
-  background: linear-gradient(120deg, #ffffff, var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -116,7 +118,7 @@ const TimelineHeader = styled.div`
 const CompanyName = styled.h3`
   margin-bottom: 0.75rem;
   font-size: 1.4rem;
-  background: linear-gradient(120deg, #ffffff, var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;

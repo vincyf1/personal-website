@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const HeroSection = styled.section`
-  background: radial-gradient(circle at top right, rgba(100, 255, 218, 0.1), transparent),
-              linear-gradient(45deg, var(--background) 0%, var(--background-light) 100%);
+  background:
+    radial-gradient(circle at top right, var(--gradient-start), transparent 70%),
+    linear-gradient(45deg, var(--background) 0%, var(--background-light) 100%);
   color: var(--text-primary);
   padding: calc(var(--spacing) * 6) 0;
   margin-top: 70px;
@@ -94,7 +95,7 @@ const ProfileContent = styled.div`
 const Title = styled.h2`
   font-size: 2.8rem;
   margin-bottom: 1rem;
-  background: linear-gradient(120deg, #ffffff, var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;

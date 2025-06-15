@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const SkillsSection = styled.section`
   padding: calc(var(--spacing) * 6) 0;
-  background: linear-gradient(135deg, var(--background) 0%, var(--background-light) 100%);
+  background:
+    radial-gradient(circle at bottom left, var(--gradient-end), transparent 70%),
+    linear-gradient(135deg, var(--background) 0%, var(--background-light) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,7 +37,7 @@ const SectionTitle = styled.h2`
   text-align: center;
   margin-bottom: calc(var(--spacing) * 3);
   font-size: 2.5rem;
-  background: linear-gradient(120deg, #ffffff, var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -112,7 +114,7 @@ const CategoryHeader = styled.div`
 
 const CategoryTitle = styled.h3`
   font-size: 1.5rem;
-  background: linear-gradient(120deg, #ffffff, var(--secondary-color));
+  background: linear-gradient(120deg, var(--gradient-end), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
