@@ -71,10 +71,10 @@ const ProfileContent = styled.div`
   flex: 1;
   min-width: 300px;
   padding: calc(var(--spacing) * 3);
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 
@@ -152,12 +152,12 @@ const SocialLink = styled.a`
   gap: 0.8rem;
   color: var(--text-secondary);
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   transition: all 0.3s ease;
   font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
 
   svg {
