@@ -121,7 +121,7 @@ const Title = styled.h2`
 
 const TaglineList = styled.ul`
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: calc(var(--spacing) * 2) 0;
   color: var(--text-secondary);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -129,21 +129,27 @@ const TaglineList = styled.ul`
   padding: 0;
 
   li {
-    margin: calc(var(--spacing) * 1) 0;
+    margin-bottom: calc(var(--spacing) * 1.25);
     display: flex;
     align-items: flex-start;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 
   li::before {
     content: '•';
     color: var(--secondary-color);
     font-weight: bold;
-    margin-right: 0.6rem;
+    margin-right: 0.8rem;
+    line-height: 1;
   }
 
   strong {
     color: var(--secondary-color);
     font-weight: 500;
+    margin-right: 0.2rem;
   }
 `;
 
