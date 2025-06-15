@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
   text-align: center;
   background: var(--background);
   position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--glass-border);
 `;
 
 const Copyright = styled.p`
@@ -24,8 +24,8 @@ const ScrollToTop = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
   color: var(--secondary-color);
   font-size: 1.2rem;
   cursor: pointer;
@@ -38,7 +38,7 @@ const ScrollToTop = styled.button`
 
   &:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--glass-hover);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 

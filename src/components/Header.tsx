@@ -14,7 +14,7 @@ const HeaderContainer = styled.header`
   z-index: 1000;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--glass-border);
   transition: all 0.3s ease-in-out;
 `;
 
@@ -47,7 +47,7 @@ const NavLinks = styled.div`
 `;
 
 const NavLink = styled(Link)`
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-secondary);
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
@@ -70,7 +70,7 @@ const NavLink = styled(Link)`
 
   &:hover {
     color: white;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--glass-background);
     transform: translateY(-1px);
     
     &::after {
@@ -80,7 +80,7 @@ const NavLink = styled(Link)`
 
   &.active {
     color: white;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--glass-hover);
     
     &::after {
       width: 80%;

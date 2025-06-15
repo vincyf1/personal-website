@@ -18,7 +18,7 @@ const SkillsSection = styled.section`
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
   }
 `;
 
@@ -79,10 +79,10 @@ interface CardProps {
 }
 
 const SkillCategory = styled.div<CardProps>`
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--glass-background);
   border-radius: 16px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   overflow: hidden;
@@ -106,7 +106,7 @@ const CategoryHeader = styled.div`
   min-height: 80px;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--glass-hover);
   }
 `;
 

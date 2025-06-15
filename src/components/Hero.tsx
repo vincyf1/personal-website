@@ -22,7 +22,7 @@ const HeroSection = styled.section`
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
   }
 `;
 
@@ -71,10 +71,10 @@ const ProfileContent = styled.div`
   flex: 1;
   min-width: 300px;
   padding: calc(var(--spacing) * 3);
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--glass-background);
   border-radius: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 
@@ -152,13 +152,13 @@ const SocialLink = styled.a`
   gap: 0.8rem;
   color: var(--text-secondary);
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--glass-background);
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   transition: all 0.3s ease;
   font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
 
   svg {
     font-size: 1.2rem;
@@ -198,21 +198,19 @@ const Hero: React.FC = () => {
             <Title>Data & Technology Leader</Title>
             <Tagline>
               <p>
-                Versatile technology leader with 15+ years of expertise spanning <strong>data engineering</strong>,
-                <strong>analytics</strong>, and <strong>artificial intelligence</strong>. Proven track record of
-                building high-impact data solutions at <strong>WISR</strong>, <strong>REA Group</strong>,
+                Seasoned data and technology leader with over 15 years building high-performing teams and
+                delivering modern <strong>data platforms</strong> and <strong>analytics solutions</strong>.
+                Proven track record of driving innovation at <strong>WISR</strong>, <strong>REA Group</strong>,
                 and <strong>The Iconic</strong>.
               </p>
               <p>
-                Comprehensive expertise in <strong>data architecture</strong>, <strong>cloud platforms</strong>,
-                and <strong>machine learning operations</strong>. Successfully bridging technical excellence
-                with business strategy to deliver scalable solutions that drive innovation and growth.
-                Strong focus on <strong>data quality</strong> and <strong>engineering best practices</strong>.
+                Expertise across <strong>data architecture</strong>, <strong>cloud strategy</strong>, and
+                <strong>machine learning operations</strong> with a strong commitment to
+                <strong>data quality</strong> and engineering excellence.
               </p>
               <p>
-                Currently spearheading strategic initiatives in <strong>data platform modernization</strong>,
-                <strong>team development</strong>, and <strong>data-driven transformation</strong>. Passionate about
-                fostering a culture of innovation and mentoring the next generation of data leaders.
+                Focused on <strong>platform modernization</strong>, <strong>team mentorship</strong>, and
+                enabling organizations to become truly <strong>data‑driven</strong>.
               </p>
             </Tagline>
             <SocialLinks>
