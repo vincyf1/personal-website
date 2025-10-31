@@ -196,7 +196,7 @@ const Hero: React.FC = () => {
           </ProfileImageContainer>
           <ProfileContent>
             <Title>Data & Technology Leader</Title>
-            <Tagline>
+            <Tagline role="region" aria-label="Professional summary">
               <p>
                 Versatile technology leader with 15+ years of expertise spanning <strong>data engineering</strong>,
                 <strong>analytics</strong>, and <strong>artificial intelligence</strong>. Proven track record of

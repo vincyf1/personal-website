@@ -94,7 +94,8 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <NavContent>
         <h1>Vinay Kulkarni</h1>
-        <NavLinks>
+        <nav>
+          <NavLinks>
           <NavLink
             to="about"
             spy={true}
@@ -134,7 +135,8 @@ const Header: React.FC = () => {
           >
             Experience
           </NavLink>
-        </NavLinks>
+          </NavLinks>
+        </nav>
       </NavContent>
     </HeaderContainer>
   );
